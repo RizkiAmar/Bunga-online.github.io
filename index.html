@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title><style>
+    
+        .button {
+            position: relative;
+        }
+        .love-button {
+            position: relative;
+            width: 250px;
+            height: 80px;
+            background-color: #00ffff;
+            color: #0a0a1a;
+            border: 2px solid #00ffff;
+            border-radius: 40px;
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 
+                0 0 10px #00ffff,
+                0 0 20px #00ffff,
+                0 0 40px #00ffff,
+                0 0 80px #00ffff;
+            animation: glow 2s ease-in-out infinite alternate;
+            transition: all 0.3s ease;
+        }
+        .love-button a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #0a0a1a;
+            font-weight: bold;
+            z-index: 3;
+        }
+        .love-button:hover {
+            transform: scale(1.05);
+            box-shadow: 
+                0 0 15px #00ffff,
+                0 0 30px #00ffff,
+                0 0 60px #00ffff,
+                0 0 100px #00ffff;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <script>
+        // Create a new audio element
+        const audio = new Audio();
+    
+        // Set the source of the audio file
+        audio.src = 'https://soundcloud.com/rizki-amar-sidik/flowers?si=5fa2866e40a54fb2a872ea2ac9c4f492&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'; // Replace with your sound file path
+    
+        // Enable autoplay
+        audio.autoplay = true;
+    
+        // Enable looping
+        audio.loop = true;
+    
+        // Optionally adjust the volume (value between 0.0 and 1.0)
+        audio.volume = 0.5;
+    
+        // Append audio to the body (optional, not visible but keeps it in the DOM)
+        document.body.appendChild(audio);
+    </script>
+    
+    <div class="greetings">
+    <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+        <span>H</span>
+        <span>A</span>
+        <span>I</span>
+        <span></span>
+        <span></span>
+        <span>W</span>
+        <span>I</span>
+        <span>N</span>
+        <span>D</span>
+        <span>A</span>
+    </div>
+    <div class="description">
+        <span>Hehe maaf nya belum bisa ngasih secara langsung virtual dulu we sekarang mah...</span>
+    </div>
+    <div class="button">
+        <button class="love-button">
+            Klik disini
+            <span style="font-size: 1.5em;">🐻</span>
+            <a href="flower.html"></a>
+        </button>
+        
+    </div>
+</body>
+</html>
